@@ -1,7 +1,8 @@
+import math
 def converter(number):
     temp = number/60
     hours = int(temp)
-    minutes = int((temp-hours)*60)
+    minutes = round(((temp-hours)*60))
     if hours == 1:
         print(hours , end="")
         print(" hour,", end="")
