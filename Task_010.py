@@ -21,6 +21,6 @@ def common_char(name1, name2):
         counter2 = 0
         while counter2 < largest:
             if name_small[counter] == name_large[counter2]:
-                print(name_small[counter])
+                print(name_small[counter]+",",end ='' )
             counter2 += 1
         counter += 1
