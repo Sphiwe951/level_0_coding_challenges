@@ -1,4 +1,5 @@
 def hello(name):
-    print("Hello " + name + "!")
+    message = f'Hello {name}!'
+    print(message) 
 
 
