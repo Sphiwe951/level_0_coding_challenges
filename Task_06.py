@@ -1,9 +1,9 @@
-def maximum(*args):          #to pass in unknown number of arguments
+def maximum(*args):         
     size = len(args)
     counter = 0
-    maxi = 0
+    maximum_var = 0
     while counter < size:
-        if args[counter] > maxi:
-            maxi = args[counter]
+        if args[counter] > maximum_var:
+            maximum_var = args[counter]
         counter +=1
-    return maxi
+    return maximum_var
