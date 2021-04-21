@@ -1,5 +1,4 @@
 def hello(name):
-    message = f'Hello {name}!'
-    print(message) 
+    print( f'Hello {name}!')
 
 
