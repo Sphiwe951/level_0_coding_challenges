@@ -1,20 +1,23 @@
 def vowel_finder(name):
-    size = len(name)
-    counter = 0
-    while counter < size:
-        if name[counter] == "a" or name[counter] == "A":
-            print(name[counter]+", ",end=' ')
-        
-        elif name[counter] == "e" or name[counter] == "E":
-            print(name[counter]+", ",end=' ')
-        
-        elif name[counter] == "i" or name[counter] == "I":
-            print(name[counter]+", ",end=' ')
-        
-        elif name[counter] == "o" or name[counter] == "O":
-            print(name[counter]+", ",end=' ')
-        
-        elif name[counter] == "u" or name[counter] == "U":
-            print(name[counter]+", ",end=' ')
-        
-        counter+=1
+    vowels = ""
+    for i in name:
+        if "A" == i or "a" == i and ("a" not in vowels):
+            vowels += 'a'
+        if "E" == i or "e" == i and ("e" not in vowels):
+            vowels += 'e'
+        if "I" == i or "i" == i and ("i" not in vowels):
+            vowels += 'i'
+        if "O" == i or "o" == i and ("o" not in vowels):
+            vowels += 'o'
+        if ("U" == i or "u" == i) and ("u" not in vowels):
+            vowels += 'u'
+   
+    
+    print_vowels = ""
+    for i in range(0,len(vowels)-1):
+        print_vowels += f'{vowels[i]}, '
+    print_last_vowels = f'{vowels[len(vowels)-1]}'
+    
+    print(print_vowels+print_last_vowels)
+    
+    
