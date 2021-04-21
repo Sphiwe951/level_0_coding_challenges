@@ -5,6 +5,8 @@ def common_char(name1, name2):
     largest = 0
     counter = 0
     counter2 = 0
+    common_chars = ""
+    print_chars = ""
 
     if size1 < size2:
         smallest = size1
@@ -21,6 +23,11 @@ def common_char(name1, name2):
         counter2 = 0
         while counter2 < largest:
             if name_small[counter] == name_large[counter2]:
-                print(name_small[counter]+",",end ='' )
+                common_chars += name_small[counter]
             counter2 += 1
         counter += 1
+    
+    for i in range(0,len(common_chars)-1):
+        print_chars += f'{common_chars[i]}, '
+    print_last_char = f'{common_chars[len(common_chars)-1]}'
+    print(print_chars + print_last_char)
