@@ -1,4 +1,3 @@
-import math
 def converter(number):
     temp = number/60
     hours = int(temp)
