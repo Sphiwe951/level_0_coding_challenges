@@ -1,10 +1,8 @@
-def maximum(*arguments):         
-    size = len(arguments)
-    counter = 0
+def maximum(*arguments):
     max_variable = arguments[0]
-    while counter < size:
-        if arguments[counter] > max_variable:
-            max_variable = arguments[counter]
-        counter +=1
 
+    for i in range(0,len(arguments)):
+        if arguments[i] > max_variable:
+            max_variable = arguments[i]
+            
     return max_variable
